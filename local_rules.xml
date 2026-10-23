@@ -1,0 +1,10 @@
+<group name="local,syslog,sshd,">
+  <rule id="100010" level="10">
+    <if_sid>5716</if_sid>
+    <match>root</match>
+    <description>Custom: SSH auth failure for root from $(srcip)</description>
+    <mitre>
+      <id>T1110</id>
+    </mitre>
+  </rule>
+</group>
